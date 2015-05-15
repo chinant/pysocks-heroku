@@ -1,11 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Date    : 2015-04-24 22:59:46
-# @Author  : zhouwei (support@neatsoft.net)
-# @Link    : http://neatsoft.net
 # @Version : $Id$
-
-import hashlib
 
 
 class RC4(object):

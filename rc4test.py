@@ -1,8 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Date    : 2015-05-08 03:01:28
-# @Author  : zhouwei (support@neatsoft.net)
-# @Link    : http://neatsoft.net
 # @Version : $Id$
 
 from __future__ import print_function
