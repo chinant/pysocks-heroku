@@ -26,7 +26,7 @@ class RCTestCase(unittest.TestCase):
         self.assertEqual(plain_text, data)
 
     def test_hex_text(self):
-        rc4 = RC4(md5key('samzw'))
+        rc4 = RC4(md5key('password'))
         hex_text = '\xfe\x85\x8f\xebjg\x81\xd0f\x9b\x98\x83'
         data = rc4.encrypt(hex_text)
         for x in data:
@@ -36,7 +36,7 @@ class RCTestCase(unittest.TestCase):
 
     def test_file(self):
         w = open('../README.md', 'w')
-        rc4 = RC4('samzw')
+        rc4 = RC4('password')
 
         generator = rc4.encrypter()
         out = ''
@@ -50,7 +50,7 @@ class RCTestCase(unittest.TestCase):
         w.close()
 
     def test_file2(self):
-        rc4 = RC4('samzw')
+        rc4 = RC4('password')
         generator = rc4.encrypter()
         w = open('../Python.pdf', 'w')
         fobj = open('../Python1.pdf')
